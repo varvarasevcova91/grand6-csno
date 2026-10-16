@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/gap_s">
+
+    <LinearLayout
+        android:id="@+id/pause_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_card"
+        android:orientation="vertical"
+        android:padding="@dimen/gap_l">
+
+        <TextView
+            android:id="@+id/pause_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:letterSpacing="0.2"
+            android:shadowColor="@color/cyber_cyan"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="14"
+            android:text="@string/dialog_pause_title"
+            android:textAppearance="@style/TextAppearance.App.Headline"
+            android:textColor="@color/cyber_cyan" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/gap_m"
+            android:background="@color/stroke_white_soft"
+            android:importantForAccessibility="no" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pause_resume"
+            style="@style/Widget.App.Button.Dialog"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/gap_l"
+            android:text="@string/cta_resume" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pause_restart"
+            style="@style/Widget.App.Button.Dialog"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/gap_s"
+            android:text="@string/cta_restart" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pause_menu"
+            style="@style/Widget.App.Button.Dialog"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/gap_s"
+            android:text="@string/cta_menu" />
+
+    </LinearLayout>
+
+</RelativeLayout>

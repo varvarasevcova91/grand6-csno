@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_garage">
+
+    <ImageView
+        android:id="@+id/garage_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.65"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_garage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/garage_scrim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/overlay_garage_scrim"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/garage_header"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/header_height"
+        android:background="@drawable/bg_header"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/gap_xs"
+        android:paddingTop="@dimen/status_inset"
+        android:paddingEnd="@dimen/screen_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/garage_back"
+            style="@style/Widget.App.Button.Nav"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/touch_min"
+            android:text="@string/cta_menu" />
+
+        <TextView
+            android:id="@+id/garage_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/garage_title"
+            android:textAppearance="@style/TextAppearance.App.Headline"
+            android:textColor="@color/text_primary" />
+
+        <com.featherroad.quest.core.ui.BalanceChipView
+            android:id="@+id/garage_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/chip_height" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/garage_tabs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/gap_m"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/garage_header">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/garage_tab_cars"
+            style="@style/Widget.App.Button.Tab"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/tab_cars" />
+
+        <Space
+            android:layout_width="@dimen/gap_s"
+            android:layout_height="1dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/garage_tab_style"
+            style="@style/Widget.App.Button.Tab"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/tab_style" />
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/garage_scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/gap_m"
+        app:layout_constraintBottom_toTopOf="@id/garage_upgrade_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/garage_tabs">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/gap_m">
+
+            <LinearLayout
+                android:id="@+id/garage_cars_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/garage_cars"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/car_card_height"
+                    android:clipToPadding="false"
+                    android:nestedScrollingEnabled="false"
+                    android:paddingStart="@dimen/screen_margin"
+                    android:paddingEnd="@dimen/screen_margin" />
+
+                <LinearLayout
+                    android:id="@+id/garage_swatches"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/screen_margin"
+                    android:layout_marginTop="@dimen/gap_l"
+                    android:layout_marginEnd="@dimen/screen_margin"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/garage_outfits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:paddingStart="@dimen/screen_margin"
+                android:paddingEnd="@dimen/screen_margin"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/garage_upgrade_frame"
+        style="@style/Widget.App.CtaFrame.Gold"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:layout_marginBottom="@dimen/control_bar_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/garage_upgrade"
+            style="@style/Widget.App.Button.Gold"
+            android:text="@string/cta_upgrade"
+            app:icon="@drawable/ic_trophy" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

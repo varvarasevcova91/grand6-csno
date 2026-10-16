@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_result">
+
+    <ImageView
+        android:id="@+id/result_skyline"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/skyline_height"
+        android:alpha="0.5"
+        android:contentDescription="@string/cd_skyline"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sprite_city_neon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/result_glow"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:alpha="0.55"
+        android:background="@drawable/bg_horizon_glow"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/result_stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/result_star_1"
+            android:layout_width="@dimen/star_size"
+            android:layout_height="@dimen/star_size"
+            android:alpha="0.25"
+            android:contentDescription="@string/cd_rating_star"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sprite_star_gold" />
+
+        <ImageView
+            android:id="@+id/result_star_2"
+            android:layout_width="@dimen/star_size"
+            android:layout_height="@dimen/star_size"
+            android:layout_marginStart="@dimen/gap_s"
+            android:alpha="0.25"
+            android:contentDescription="@string/cd_rating_star"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sprite_star_gold" />
+
+        <ImageView
+            android:id="@+id/result_star_3"
+            android:layout_width="@dimen/star_size"
+            android:layout_height="@dimen/star_size"
+            android:layout_marginStart="@dimen/gap_s"
+            android:alpha="0.25"
+            android:contentDescription="@string/cd_rating_star"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sprite_star_gold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result_headline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:accessibilityLiveRegion="polite"
+        android:gravity="center"
+        android:shadowColor="@color/luxury_gold"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="18"
+        android:text="@string/result_complete"
+        android:textAppearance="@style/TextAppearance.App.Display"
+        android:textColor="@color/luxury_gold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/result_stars" />
+
+    <View
+        android:id="@+id/result_underline"
+        android:layout_width="168dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_chrome_underline"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/result_headline" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/result_panel"
+        style="@style/Widget.App.Card.Surface"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/gap_l"
+        android:layout_marginEnd="@dimen/screen_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/result_underline"
+        app:strokeColor="@color/stroke_gold_soft">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/gap_l">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/row_cash"
+                    android:textAppearance="@style/TextAppearance.App.Label"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="@dimen/text_label" />
+
+                <TextView
+                    android:id="@+id/result_cash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFeatureSettings="tnum"
+                    android:textAppearance="@style/TextAppearance.App.Title"
+                    android:textColor="@color/luxury_gold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_s"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/row_diamonds"
+                    android:textAppearance="@style/TextAppearance.App.Label"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="@dimen/text_label" />
+
+                <TextView
+                    android:id="@+id/result_diamonds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFeatureSettings="tnum"
+                    android:textAppearance="@style/TextAppearance.App.Title"
+                    android:textColor="@color/cyber_cyan" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_s"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/row_multiplier"
+                    android:textAppearance="@style/TextAppearance.App.Label"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="@dimen/text_label" />
+
+                <TextView
+                    android:id="@+id/result_multiplier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFeatureSettings="tnum"
+                    android:textAppearance="@style/TextAppearance.App.Title"
+                    android:textColor="@color/neon_pink" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/gap_m"
+                android:background="@color/stroke_white_soft"
+                android:importantForAccessibility="no" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_m"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:letterSpacing="0.16"
+                    android:text="@string/row_total"
+                    android:textAppearance="@style/TextAppearance.App.Label"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_label" />
+
+                <TextView
+                    android:id="@+id/result_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFeatureSettings="tnum"
+                    android:textAppearance="@style/TextAppearance.App.Numeric"
+                    android:textColor="@color/luxury_gold"
+                    android:textSize="26sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:id="@+id/result_stat_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/gap_m"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/result_panel">
+
+        <com.featherroad.quest.core.ui.StatCardView
+            android:id="@+id/result_stat_best"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:statAccent="@color/cyber_cyan"
+            app:statLabel="@string/stat_best_run" />
+
+        <Space
+            android:layout_width="@dimen/gap_s"
+            android:layout_height="1dp" />
+
+        <com.featherroad.quest.core.ui.StatCardView
+            android:id="@+id/result_stat_points"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:statAccent="@color/luxury_gold"
+            app:statLabel="@string/stat_vip_points" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/result_again_frame"
+        style="@style/Widget.App.CtaFrame.Primary"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:layout_marginBottom="@dimen/gap_m"
+        app:layout_constraintBottom_toTopOf="@id/result_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/result_again"
+            style="@style/Widget.App.Button.Primary"
+            android:text="@string/cta_drive_again"
+            app:icon="@drawable/ic_speed" />
+
+    </FrameLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/result_menu"
+        style="@style/Widget.App.Button.Secondary"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:layout_marginBottom="@dimen/control_bar_bottom"
+        android:text="@string/cta_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

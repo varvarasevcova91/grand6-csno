@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/reel_symbol"
+        android:layout_width="@dimen/reel_symbol"
+        android:layout_height="@dimen/reel_symbol"
+        android:layout_gravity="center"
+        android:contentDescription="@string/cd_reel"
+        android:scaleType="fitCenter" />
+
+    <View
+        android:id="@+id/reel_flash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="@color/fill_cyan_soft"
+        android:importantForAccessibility="no" />
+
+</merge>

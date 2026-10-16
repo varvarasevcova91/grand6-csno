@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="status_inset">44dp</dimen>
+    <dimen name="header_height">100dp</dimen>
+    <dimen name="screen_margin">16dp</dimen>
+    <dimen name="screen_margin_wide">20dp</dimen>
+    <dimen name="gap_xs">6dp</dimen>
+    <dimen name="gap_s">10dp</dimen>
+    <dimen name="gap_m">14dp</dimen>
+    <dimen name="gap_l">20dp</dimen>
+    <dimen name="gap_xl">28dp</dimen>
+
+    <dimen name="touch_min">48dp</dimen>
+    <dimen name="btn_primary_height">60dp</dimen>
+    <dimen name="btn_mission_height">56dp</dimen>
+    <dimen name="btn_secondary_height">48dp</dimen>
+    <dimen name="btn_dialog_height">52dp</dimen>
+    <dimen name="btn_tab_height">44dp</dimen>
+    <dimen name="btn_icon_size">24dp</dimen>
+
+    <dimen name="radius_s">14dp</dimen>
+    <dimen name="radius_m">18dp</dimen>
+    <dimen name="radius_l">20dp</dimen>
+    <dimen name="radius_xl">24dp</dimen>
+    <dimen name="radius_sheet">28dp</dimen>
+    <dimen name="radius_emblem">32dp</dimen>
+
+    <dimen name="splash_emblem_size">132dp</dimen>
+    <dimen name="splash_emblem_sprite">96dp</dimen>
+    <dimen name="splash_progress_width">196dp</dimen>
+    <dimen name="splash_progress_thickness">6dp</dimen>
+
+    <dimen name="menu_hero_min_height">300dp</dimen>
+    <dimen name="menu_car_width">180dp</dimen>
+    <dimen name="menu_car_height">110dp</dimen>
+    <dimen name="menu_palm_width">96dp</dimen>
+    <dimen name="menu_palm_height">150dp</dimen>
+    <dimen name="sheet_overlap">24dp</dimen>
+
+    <dimen name="chip_height">36dp</dimen>
+    <dimen name="chip_radius">18dp</dimen>
+    <dimen name="chip_icon">18dp</dimen>
+
+    <dimen name="mission_row_height">108dp</dimen>
+    <dimen name="mission_thumb">72dp</dimen>
+    <dimen name="pip_size">10dp</dimen>
+
+    <dimen name="road_board_max">380dp</dimen>
+    <dimen name="road_padding">8dp</dimen>
+    <dimen name="road_border">2dp</dimen>
+    <dimen name="player_car_width">76dp</dimen>
+    <dimen name="player_car_height">118dp</dimen>
+    <dimen name="traffic_car_width">72dp</dimen>
+    <dimen name="traffic_car_height">112dp</dimen>
+    <dimen name="police_car_width">74dp</dimen>
+    <dimen name="police_car_height">114dp</dimen>
+    <dimen name="pickup_cash">48dp</dimen>
+    <dimen name="pickup_diamond">44dp</dimen>
+    <dimen name="pickup_multiplier">52dp</dimen>
+
+    <dimen name="control_bar_height">96dp</dimen>
+    <dimen name="control_bar_bottom">32dp</dimen>
+    <dimen name="boost_width">140dp</dimen>
+
+    <dimen name="reel_card_width">300dp</dimen>
+    <dimen name="reel_card_height">200dp</dimen>
+    <dimen name="reel_symbol">64dp</dimen>
+    <dimen name="star_size">36dp</dimen>
+    <dimen name="skyline_height">160dp</dimen>
+
+    <dimen name="car_card_width">160dp</dimen>
+    <dimen name="car_card_height">248dp</dimen>
+    <dimen name="car_preview_width">120dp</dimen>
+    <dimen name="car_preview_height">80dp</dimen>
+    <dimen name="swatch_size">48dp</dimen>
+    <dimen name="outfit_thumb">84dp</dimen>
+
+    <dimen name="meter_height">10dp</dimen>
+    <dimen name="meter_segment_gap">3dp</dimen>
+    <dimen name="stat_dot">8dp</dimen>
+    <dimen name="card_elevation">10dp</dimen>
+    <dimen name="sheet_elevation">14dp</dimen>
+    <dimen name="bar_elevation">12dp</dimen>
+    <dimen name="stroke_thin">1dp</dimen>
+    <dimen name="stroke_bold">2dp</dimen>
+
+    <dimen name="text_hero">46sp</dimen>
+    <dimen name="text_hero_sub">38sp</dimen>
+    <dimen name="text_display">32sp</dimen>
+    <dimen name="text_menu_title">30sp</dimen>
+    <dimen name="text_payout">34sp</dimen>
+    <dimen name="text_headline">22sp</dimen>
+    <dimen name="text_numeric">22sp</dimen>
+    <dimen name="text_title">17sp</dimen>
+    <dimen name="text_button">18sp</dimen>
+    <dimen name="text_body">14sp</dimen>
+    <dimen name="text_label">12sp</dimen>
+    <dimen name="text_caption">11sp</dimen>
+    <dimen name="text_micro">10sp</dimen>
+</resources>

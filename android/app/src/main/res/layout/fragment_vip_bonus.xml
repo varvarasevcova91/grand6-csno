@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_bonus">
+
+    <ImageView
+        android:id="@+id/bonus_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_bonus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/bonus_scrim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/overlay_bonus_scrim"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/bonus_particles"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/bonus_header"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/header_height"
+        android:background="@drawable/bg_header"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/status_inset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/bonus_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.16"
+            android:shadowColor="@color/luxury_gold"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="14"
+            android:text="@string/bonus_title"
+            android:textAppearance="@style/TextAppearance.App.Headline"
+            android:textColor="@color/luxury_gold" />
+
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/bonus_reel_card"
+        android:layout_width="@dimen/reel_card_width"
+        android:layout_height="@dimen/reel_card_height"
+        app:cardBackgroundColor="@color/surface_reel"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="@dimen/bar_elevation"
+        app:layout_constraintBottom_toTopOf="@id/bonus_payout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bonus_header"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:strokeColor="@color/luxury_gold"
+        app:strokeWidth="@dimen/stroke_bold">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/gap_m">
+
+            <com.featherroad.quest.core.ui.ReelStripView
+                android:id="@+id/bonus_reel_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <com.featherroad.quest.core.ui.ReelStripView
+                android:id="@+id/bonus_reel_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/gap_s"
+                android:layout_weight="1" />
+
+            <com.featherroad.quest.core.ui.ReelStripView
+                android:id="@+id/bonus_reel_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/gap_s"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <View
+        android:id="@+id/bonus_shockwave"
+        android:layout_width="@dimen/reel_card_width"
+        android:layout_height="@dimen/reel_card_height"
+        android:alpha="0"
+        android:background="@drawable/bg_reel_window"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@id/bonus_reel_card"
+        app:layout_constraintEnd_toEndOf="@id/bonus_reel_card"
+        app:layout_constraintStart_toStartOf="@id/bonus_reel_card"
+        app:layout_constraintTop_toTopOf="@id/bonus_reel_card" />
+
+    <TextView
+        android:id="@+id/bonus_payout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_xl"
+        android:accessibilityLiveRegion="polite"
+        android:fontFeatureSettings="tnum"
+        android:shadowColor="@color/luxury_gold"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="18"
+        android:textAppearance="@style/TextAppearance.App.Numeric"
+        android:textColor="@color/luxury_gold"
+        android:textSize="@dimen/text_payout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bonus_reel_card" />
+
+    <TextView
+        android:id="@+id/bonus_disclaimer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:layout_marginBottom="@dimen/gap_s"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:text="@string/bonus_disclaimer"
+        android:textAppearance="@style/TextAppearance.App.Label"
+        android:textColor="@color/text_muted"
+        android:textSize="@dimen/text_micro"
+        app:layout_constraintBottom_toTopOf="@id/bonus_collect_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/bonus_collect_frame"
+        style="@style/Widget.App.CtaFrame.Gold"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:layout_marginBottom="@dimen/control_bar_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bonus_collect"
+            style="@style/Widget.App.Button.Gold"
+            android:text="@string/cta_collect"
+            app:icon="@drawable/ic_cash" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

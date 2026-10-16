@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingEnd="@dimen/gap_s">
+
+    <LinearLayout
+        android:id="@+id/car_root"
+        android:layout_width="@dimen/car_card_width"
+        android:layout_height="match_parent"
+        android:background="@drawable/card_neon_stroke"
+        android:orientation="vertical"
+        android:padding="@dimen/gap_m">
+
+        <ImageView
+            android:id="@+id/car_preview"
+            android:layout_width="@dimen/car_preview_width"
+            android:layout_height="@dimen/car_preview_height"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/cd_car_preview"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/car_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/gap_xs"
+            android:letterSpacing="0.06"
+            android:textAppearance="@style/TextAppearance.App.Title"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_body" />
+
+        <com.featherroad.quest.core.ui.NeonMeterView
+            android:id="@+id/car_meter_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_s"
+            app:meterAccent="@color/cyber_cyan"
+            app:meterLabel="@string/meter_speed" />
+
+        <com.featherroad.quest.core.ui.NeonMeterView
+            android:id="@+id/car_meter_grip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_xs"
+            app:meterAccent="@color/neon_pink"
+            app:meterLabel="@string/meter_grip" />
+
+        <com.featherroad.quest.core.ui.NeonMeterView
+            android:id="@+id/car_meter_nitro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_xs"
+            app:meterAccent="@color/luxury_gold"
+            app:meterLabel="@string/meter_nitro" />
+
+    </LinearLayout>
+
+</FrameLayout>

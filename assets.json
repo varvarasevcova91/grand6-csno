@@ -1,0 +1,94 @@
+{
+  "assets": [
+    {
+      "name": "icon_1024",
+      "type": "icon",
+      "prompt": "App icon, one single glossy 3D neon pink supercar front emblem, centered, dark navy radial gradient background, crisp, no text"
+    },
+    {
+      "name": "bg_splash",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile game loader background, neon Miami skyline at night, magenta and cyan glow, palm silhouettes, cinematic, very dark, no text, no UI"
+    },
+    {
+      "name": "bg_menu",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile game menu background, vibrant neon Miami beach boulevard at sunset, purple and pink sky, glowing skyscrapers, 3D render, no text, no UI"
+    },
+    {
+      "name": "bg_map",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile game background, stylized neon city map seen from above, glowing streets and districts, dark navy, low contrast, no text, no UI"
+    },
+    {
+      "name": "bg_game",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile game background, soft blurred night highway with wet reflective asphalt and distant neon city, low contrast for UI overlay, no text, no UI"
+    },
+    {
+      "name": "bg_bonus",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile game background, dark luxury hall with golden light rays and neon purple haze, low contrast, no text, no UI"
+    },
+    {
+      "name": "bg_garage",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile game background, premium neon lit car showroom interior, cyan and magenta light strips, glossy floor, no text, no UI"
+    },
+    {
+      "name": "sprite_car_hero",
+      "type": "sprite",
+      "prompt": "One single glossy 3D neon pink supercar seen from behind, centered icon, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_car_traffic",
+      "type": "sprite",
+      "prompt": "One single glossy 3D cyan city sedan seen from behind, centered icon, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_police_car",
+      "type": "sprite",
+      "prompt": "One single glossy 3D police car with a blue and red lightbar seen from behind, centered icon, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_cash_bundle",
+      "type": "sprite",
+      "prompt": "One single cartoon bundle of green cash bills with a gold band, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_diamond",
+      "type": "sprite",
+      "prompt": "One single sparkling cyan cut diamond, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_seven_gold",
+      "type": "sprite",
+      "prompt": "One single golden number seven symbol with a chrome bevel, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_star_gold",
+      "type": "sprite",
+      "prompt": "One single glowing golden five pointed star, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_multiplier",
+      "type": "sprite",
+      "prompt": "One single neon purple hexagon token with a glossy chrome rim, centered icon, 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_palm_neon",
+      "type": "sprite",
+      "prompt": "One single neon lit palm tree silhouette, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_city_neon",
+      "type": "sprite",
+      "prompt": "One single stylized neon skyline block of glowing skyscrapers, centered icon, 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_outfit_vip",
+      "type": "sprite",
+      "prompt": "One single glossy 3D street style jacket with a gold chain, centered icon, isolated on plain white, no other objects"
+    }
+  ]
+}

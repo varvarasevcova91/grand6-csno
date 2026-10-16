@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@+id/stat_dot"
+        android:layout_width="@dimen/stat_dot"
+        android:layout_height="@dimen/stat_dot"
+        android:background="@drawable/bg_dot_accent"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:id="@+id/stat_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_xs"
+        android:textAppearance="@style/TextAppearance.App.Numeric"
+        android:textColor="@color/cyber_cyan" />
+
+    <TextView
+        android:id="@+id/stat_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textAppearance="@style/TextAppearance.App.Label"
+        android:textColor="@color/text_muted"
+        android:textSize="@dimen/text_micro" />
+
+</merge>

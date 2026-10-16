@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Grand6Csno</string>
+
+    <string name="splash_title_top">GRAND6</string>
+    <string name="splash_title_bottom">CSNO</string>
+    <string name="splash_tagline">NEON VICE - MIAMI LEGENDS</string>
+    <string name="splash_loading">LOADING THE CITY</string>
+    <string name="cd_brand_emblem">Neon supercar brand emblem</string>
+
+    <string name="menu_title">GRAND6CSNO</string>
+    <string name="menu_hint">TAP TO DRIVE - SWIPE TO SWITCH LANE</string>
+    <string name="menu_rank">VIP RANK 03</string>
+    <string name="cta_play">PLAY</string>
+    <string name="cta_city_map">CITY MAP</string>
+    <string name="cta_garage">GARAGE</string>
+    <string name="cta_settings">SETTINGS</string>
+    <string name="cd_hero_car">Neon pink supercar</string>
+    <string name="cd_palm">Neon palm tree</string>
+
+    <string name="stat_best_run">BEST RUN</string>
+    <string name="stat_missions">MISSIONS</string>
+    <string name="stat_vip_points">VIP POINTS</string>
+
+    <string name="map_title">VICE CITY</string>
+    <string name="cta_menu">MENU</string>
+    <string name="cta_start_mission">START MISSION</string>
+    <string name="mission_locked">LOCKED</string>
+    <string name="state_locked">locked</string>
+    <string name="state_unlocked">unlocked</string>
+    <string name="cd_district">District skyline</string>
+
+    <string name="cta_pause">PAUSE</string>
+    <string name="cta_boost">BOOST</string>
+    <string name="game_hint_ready">TAP TO DRIVE</string>
+    <string name="label_speed">SPEED</string>
+    <string name="state_boost_ready">boost ready</string>
+    <string name="state_boost_cooling">boost cooling down</string>
+    <string name="cd_player_car">Player supercar</string>
+    <string name="cd_road">Three lane neon road</string>
+
+    <string name="bonus_title">VIP BONUS</string>
+    <string name="cta_collect">COLLECT</string>
+    <string name="bonus_disclaimer">VIRTUAL IN-GAME CASH ONLY - NO REAL MONEY</string>
+    <string name="cd_reel">Bonus reel symbol</string>
+
+    <string name="result_complete">MISSION COMPLETE</string>
+    <string name="result_busted">BUSTED</string>
+    <string name="cta_drive_again">DRIVE AGAIN</string>
+    <string name="row_cash">CASH COLLECTED</string>
+    <string name="row_diamonds">DIAMONDS</string>
+    <string name="row_multiplier">MULTIPLIER</string>
+    <string name="row_total">TOTAL PAYOUT</string>
+    <string name="cd_rating_star">Rating star</string>
+    <string name="cd_skyline">Neon skyline silhouette</string>
+
+    <string name="garage_title">GARAGE</string>
+    <string name="tab_cars">CARS</string>
+    <string name="tab_style">STYLE</string>
+    <string name="cta_upgrade">UPGRADE</string>
+    <string name="meter_speed">SPEED</string>
+    <string name="meter_grip">GRIP</string>
+    <string name="meter_nitro">NITRO</string>
+    <string name="owned">OWNED</string>
+    <string name="cd_car_preview">Car preview</string>
+    <string name="cd_outfit_preview">Outfit preview</string>
+    <string name="state_selected">selected</string>
+    <string name="state_active">active</string>
+    <string name="state_inactive">inactive</string>
+
+    <string name="dialog_settings_title">SETTINGS</string>
+    <string name="setting_sound">SOUND</string>
+    <string name="setting_music">MUSIC</string>
+    <string name="setting_vibration">VIBRATION</string>
+    <string name="setting_quality">GRAPHICS QUALITY</string>
+    <string name="quality_low">LOW</string>
+    <string name="quality_med">MED</string>
+    <string name="quality_high">HIGH</string>
+    <string name="cta_reset">RESET PROGRESS</string>
+    <string name="cta_close">CLOSE</string>
+
+    <string name="dialog_pause_title">PAUSED</string>
+    <string name="cta_resume">RESUME</string>
+    <string name="cta_restart">RESTART</string>
+
+    <string name="fmt_cash">$ %1$s</string>
+    <string name="fmt_distance">DISTANCE %1$s M</string>
+    <string name="fmt_diamonds">D %1$d/%2$d</string>
+    <string name="fmt_multiplier">x%1$d</string>
+    <string name="fmt_payout">+ $ %1$s</string>
+    <string name="fmt_reward_risk">REWARD $ %1$s - RISK %2$s</string>
+    <string name="fmt_price">$ %1$s</string>
+    <string name="fmt_rank">VIP RANK %1$02d</string>
+    <string name="fmt_stars">%1$d OF %2$d STARS</string>
+</resources>

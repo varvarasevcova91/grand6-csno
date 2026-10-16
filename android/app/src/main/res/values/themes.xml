@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Grand6Csno" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/neon_pink</item>
+        <item name="colorOnPrimary">@color/text_primary</item>
+        <item name="colorSecondary">@color/cyber_cyan</item>
+        <item name="colorOnSecondary">@color/midnight_navy</item>
+        <item name="colorTertiary">@color/luxury_gold</item>
+        <item name="colorOnTertiary">@color/midnight_navy</item>
+        <item name="android:colorBackground">@color/midnight_navy</item>
+        <item name="colorSurface">@color/deep_violet</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorSurfaceVariant">@color/violet_shadow</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+        <item name="colorOutline">@color/stroke_light</item>
+        <item name="colorError">@color/siren_red</item>
+        <item name="android:windowBackground">@color/midnight_navy</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/midnight_navy</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="textAppearanceDisplaySmall">@style/TextAppearance.App.Display</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.App.Headline</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.App.Title</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.App.Body</item>
+        <item name="textAppearanceLabelSmall">@style/TextAppearance.App.Label</item>
+        <item name="materialButtonStyle">@style/Widget.App.Button.Primary</item>
+    </style>
+
+    <style name="Theme.Grand6Csno.Dialog" parent="Theme.Material3.DayNight.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.72</item>
+        <item name="android:windowMinWidthMajor">88%</item>
+        <item name="android:windowMinWidthMinor">88%</item>
+        <item name="colorPrimary">@color/neon_pink</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+    </style>
+</resources>

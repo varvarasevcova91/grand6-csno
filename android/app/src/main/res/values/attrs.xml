@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StatCardView">
+        <attr name="statLabel" format="string" />
+        <attr name="statValue" format="string" />
+        <attr name="statAccent" format="color" />
+    </declare-styleable>
+    <declare-styleable name="NeonMeterView">
+        <attr name="meterProgress" format="integer" />
+        <attr name="meterAccent" format="color" />
+        <attr name="meterLabel" format="string" />
+    </declare-styleable>
+    <declare-styleable name="BalanceChipView">
+        <attr name="balanceValue" format="string" />
+        <attr name="balanceIcon" format="reference" />
+    </declare-styleable>
+</resources>
